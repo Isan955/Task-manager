@@ -1,0 +1,214 @@
+/* Umum untuk semua halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #353638;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1, .title {
+    text-align: center;
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Mengatur gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk setiap baris */
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Gaya untuk header tabel */
+table th {
+    background-color: #d22a2a;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Gaya untuk sel data */
+table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Tombol Kembali */
+.btn-secondary {
+    background-color: #c8f32e;
+    color: rgb(11, 11, 11);
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-secondary:active {
+    background-color: #545b62;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #16e744;
+    color: rgb(10, 10, 10);
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-primary:active {
+    background-color: #545b62;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Kolom untuk tombol (Edit, Hapus) */
+.table-actions {
+    text-align: right; /* Posisi tombol di kolom kanan */
+}
+
+/* Mengatur tombol Edit dan Hapus */
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* Tombol Edit */
+.edit-button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+/* Tombol Hapus */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Efek hover pada baris tabel */
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Tombol Buat Tugas Baru */
+.btn-create-task {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.btn-create-task:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat di-hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan lebih besar saat di-hover */
+    cursor: pointer;
+}
+
+.btn-create-task:active {
+    background-color: #003d7a; /* Warna saat tombol ditekan */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek tombol ditekan */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    .edit-button, .delete-button, .btn-create-task {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
